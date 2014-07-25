@@ -364,7 +364,7 @@ CGPoint CGPointAdd(CGPoint point1, CGPoint point2) {
     NSUInteger indexCount = _displayedIndexStrings.count;
     CGRect barBackgroundRect = [self rectForBarBackgroundView];
     CGRect textAreaRect = [self rectForTextArea];
-    CGFloat yp = _textSpacing + textAreaRect.origin.y + _textOffset.vertical;
+    CGFloat yp = _textSpacing + textAreaRect.origin.y;
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     
     // draw debug box for text area
